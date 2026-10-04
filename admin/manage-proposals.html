@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Manage Proposals | FreelanceHub</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/dashboard.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/admin.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav class="navbar">
+
+        <div class="navbar-container">
+
+            <a
+                href="../index.html"
+                class="logo"
+            >
+                FreelanceHub
+            </a>
+
+            <div class="nav-right">
+
+                <a
+                    href="admin-dashboard.html"
+                    class="nav-link"
+                >
+                    Admin Dashboard
+                </a>
+
+                <button
+                    id="adminLogoutButton"
+                    class="btn btn-secondary"
+                >
+                    Logout
+                </button>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Manage Proposals Page -->
+
+    <main class="dashboard-page">
+
+        <section class="dashboard-header">
+
+            <p class="hero-tag">
+                ADMIN MODULE
+            </p>
+
+            <h1>
+                Manage Proposals
+            </h1>
+
+            <p>
+                View all proposals submitted by freelancers.
+            </p>
+
+        </section>
+
+
+        <!-- Proposals Container -->
+
+        <section
+            id="proposalsContainer"
+            class="dashboard-grid"
+        >
+
+            <!-- Proposals will be displayed here by JavaScript -->
+
+        </section>
+
+    </main>
+
+
+    <script src="../js/manage-proposals.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Post a Job | FreelanceHub</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/jobs.css">
+
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            FreelanceHub
+        </div>
+
+        <div class="dashboard-nav">
+
+            <a
+                href="user-dashboard.html"
+                class="btn btn-outline"
+            >
+                ← Dashboard
+            </a>
+
+            <button
+                id="logoutButton"
+                class="btn btn-outline"
+            >
+                Logout
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main class="jobs-container">
+
+        <section class="jobs-header">
+
+            <p class="hero-tag">
+                CLIENT MODULE
+            </p>
+
+            <h1>
+                Post a New Job
+            </h1>
+
+            <p>
+                Describe your project and find the right freelancer.
+            </p>
+
+        </section>
+
+
+        <section class="proposal-card">
+
+            <form id="postJobForm">
+
+                <div class="form-group">
+
+                    <label for="jobTitle">
+                        Job Title
+                    </label>
+
+                    <input
+                        type="text"
+                        id="jobTitle"
+                        placeholder="Example: Build a Website for My Business"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="jobDescription">
+                        Job Description
+                    </label>
+
+                    <textarea
+                        id="jobDescription"
+                        rows="7"
+                        placeholder="Describe what you need the freelancer to do..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="jobSkills">
+                        Required Skills
+                    </label>
+
+                    <input
+                        type="text"
+                        id="jobSkills"
+                        placeholder="Example: HTML, CSS, JavaScript"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="jobBudget">
+                        Budget
+                    </label>
+
+                    <input
+                        type="text"
+                        id="jobBudget"
+                        placeholder="Example: ₹5,000 - ₹10,000"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-primary"
+                >
+                    Post Job
+                </button>
+
+
+                <p id="jobMessage"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <script src="../js/post-job.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Admin Dashboard | FreelanceHub</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/dashboard.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/admin.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav class="navbar">
+
+        <div class="navbar-container">
+
+            <a
+                href="../index.html"
+                class="logo"
+            >
+                FreelanceHub
+            </a>
+
+            <div class="nav-right">
+
+                <span>
+                    Admin Panel
+                </span>
+
+                <button
+                    id="adminLogoutButton"
+                    class="btn btn-secondary"
+                >
+                    Logout
+                </button>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Admin Dashboard -->
+
+    <main class="dashboard-page">
+
+        <section class="dashboard-header">
+
+            <p class="hero-tag">
+                ADMIN MODULE
+            </p>
+
+            <h1>
+                Admin Dashboard
+            </h1>
+
+            <p>
+                Manage users, jobs, and proposals on FreelanceHub.
+            </p>
+
+        </section>
+
+
+        <!-- Statistics -->
+
+        <section class="dashboard-grid">
+
+            <div class="dashboard-card">
+
+                <h2>
+                    Total Users
+                </h2>
+
+                <p
+                    id="totalUsers"
+                    class="dashboard-number"
+                >
+                    0
+                </p>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <h2>
+                    Total Jobs
+                </h2>
+
+                <p
+                    id="totalJobs"
+                    class="dashboard-number"
+                >
+                    0
+                </p>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <h2>
+                    Total Proposals
+                </h2>
+
+                <p
+                    id="totalProposals"
+                    class="dashboard-number"
+                >
+                    0
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Admin Actions -->
+
+        <section class="dashboard-section">
+
+            <h2>
+                Administration
+            </h2>
+
+            <div class="dashboard-grid">
+
+
+                <div class="dashboard-card">
+
+                    <h2>
+                        Manage Users
+                    </h2>
+
+                    <p>
+                        View and manage registered users.
+                    </p>
+
+                    <button 
+                    class="btn btn-primary"
+                    onclick="window.location.href='manage-users.html'"
+    >
+                    Manage Users
+    </button>
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <h2>
+                        Manage Jobs
+                    </h2>
+
+                    <p>
+                        View and manage posted jobs.
+                    </p>
+
+                    <button
+                    class="btn btn-primary"
+                    onclick="window.location.href='manage-jobs.html'"
+    >
+                    Manage Jobs
+    </button>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <h2>
+                        View Proposals
+                    </h2>
+
+                    <p>
+                        View proposals submitted by freelancers.
+                    </p>
+
+                    <button
+                    class="btn btn-primary"
+                    onclick="window.location.href='manage-proposals.html'"
+    >
+                    View Proposals
+    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="../js/admin.js"></script>
+
+</body>
+
+</html>

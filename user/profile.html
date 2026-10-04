@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+```
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>My Profile | FreelanceHub</title>
+
+<link
+    rel="stylesheet"
+    href="../css/style.css"
+>
+
+<link
+    rel="stylesheet"
+    href="../css/dashboard.css"
+>
+```
+
+</head>
+
+<body>
+
+```
+<!-- ================================
+    NAVBAR
+================================= -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        FreelanceHub
+    </div>
+
+    <div class="nav-links">
+
+        <a href="user-dashboard.html">
+            Dashboard
+        </a>
+
+        <button
+            id="logoutButton"
+            class="btn btn-secondary"
+        >
+            Logout
+        </button>
+
+    </div>
+
+</nav>
+
+
+<!-- ================================
+     PROFILE PAGE
+================================= -->
+
+<main class="dashboard-page">
+
+    <section class="dashboard-header">
+
+        <p class="hero-tag">
+            USER MODULE
+        </p>
+
+        <h1>
+            My Profile
+        </h1>
+
+        <p>
+            Manage your FreelanceHub profile information.
+        </p>
+
+    </section>
+
+
+    <!-- ================================
+        PROFILE FORM
+    ================================= -->
+
+    <section class="dashboard-section">
+
+        <div class="dashboard-card profile-card">
+
+            <form id="profileForm">
+
+                <!-- Name -->
+
+                <div class="form-group">
+
+                    <label for="profileName">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="profileName"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Email -->
+
+                <div class="form-group">
+
+                    <label for="profileEmail">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="profileEmail"
+                        readonly
+                    >
+
+                </div>
+
+
+                <!-- Role -->
+
+                <div class="form-group">
+
+                    <label for="profileRole">
+                        Account Type
+                    </label>
+
+                    <input
+                        type="text"
+                        id="profileRole"
+                        readonly
+                    >
+
+                </div>
+
+
+                <!-- Bio -->
+
+                <div class="form-group">
+
+                    <label for="profileBio">
+                        About Me
+                    </label>
+
+                    <textarea
+                        id="profileBio"
+                        rows="5"
+                        placeholder="Tell us a little about yourself..."
+                    ></textarea>
+
+                </div>
+
+
+                <!-- Freelancer Fields -->
+
+                <div id="freelancerFields">
+
+                    <div class="form-group">
+
+                        <label for="profileSkills">
+                            Skills
+                        </label>
+
+                        <input
+                            type="text"
+                            id="profileSkills"
+                            placeholder="Example: HTML, CSS, JavaScript, Python"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="profilePortfolio">
+                            Portfolio Information
+                        </label>
+
+                        <textarea
+                            id="profilePortfolio"
+                            rows="4"
+                            placeholder="Describe your projects, portfolio, or previous work..."
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Client Fields -->
+
+                <div id="clientFields">
+
+                    <div class="form-group">
+
+                        <label for="profileCompany">
+                            Company / Organization
+                        </label>
+
+                        <input
+                            type="text"
+                            id="profileCompany"
+                            placeholder="Enter company or organization name"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- Message -->
+
+                <p id="profileMessage"></p>
+
+
+                <!-- Save Button -->
+
+                <button
+                    type="submit"
+                    class="btn btn-primary"
+                >
+                    Save Profile
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="../js/profile.js"></script>
+```
+
+</body>
+
+</html>

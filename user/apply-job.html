@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Apply for Job | FreelanceHub</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/jobs.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            FreelanceHub
+        </div>
+
+        <div class="dashboard-nav">
+
+            <a href="browse-jobs.html" class="btn btn-outline">
+                ← Browse Jobs
+            </a>
+
+            <button id="logoutButton" class="btn btn-outline">
+                Logout
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main class="jobs-container">
+
+        <section class="jobs-header">
+
+            <p class="hero-tag">
+                JOB APPLICATION
+            </p>
+
+            <h1>
+                Submit Your Proposal
+            </h1>
+
+            <p>
+                Tell the client why you are the right freelancer for this project.
+            </p>
+
+        </section>
+
+
+        <section class="proposal-card">
+
+            <div class="selected-job">
+
+                <h2 id="jobTitle">
+                    Loading job...
+                </h2>
+
+                <p id="jobDescription">
+                    Please wait...
+                </p>
+
+                <p id="jobBudget" class="job-budget">
+                </p>
+
+            </div>
+
+
+            <form id="proposalForm">
+
+                <div class="form-group">
+
+                    <label for="coverLetter">
+                        Cover Letter
+                    </label>
+
+                    <textarea
+                        id="coverLetter"
+                        rows="7"
+                        placeholder="Explain your skills, experience and why you are suitable for this project..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="proposedBudget">
+                        Your Proposed Budget
+                    </label>
+
+                    <input
+                        type="number"
+                        id="proposedBudget"
+                        placeholder="Enter amount in ₹"
+                        min="1"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-primary"
+                >
+                    Submit Proposal
+                </button>
+
+
+                <p id="proposalMessage"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <script src="../js/proposal.js"></script>
+
+</body>
+
+</html>

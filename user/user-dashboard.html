@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | FreelanceHub</title>
+
+    <!-- Main Website CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Dashboard CSS -->
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================
+            NAVIGATION BAR
+    ================================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            FreelanceHub
+        </div>
+
+        <div class="dashboard-nav">
+
+            <span id="welcomeUser"></span>
+
+            <button id="logoutButton" class="btn btn-outline">
+                Logout
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =================================
+            DASHBOARD
+    ================================== -->
+
+    <main class="dashboard-container">
+
+
+        <!-- =================================
+                WELCOME SECTION
+        ================================== -->
+
+        <section class="dashboard-header">
+
+            <p class="hero-tag">
+                USER MODULE
+            </p>
+
+            <h1>
+                Welcome, <span id="userName">User</span> 👋
+            </h1>
+
+            <p id="userRole">
+                Account Type
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================
+                DASHBOARD CARDS
+        ================================== -->
+
+        <section class="dashboard-grid">
+
+
+            <!-- =================================
+                    FREELANCER CARDS
+            ================================== -->
+
+
+            <!-- Browse Jobs -->
+
+            <div class="dashboard-card freelancer-card">
+
+                <div class="dashboard-icon">
+                    📋
+                </div>
+
+                <h2>
+                    Browse Jobs
+                </h2>
+
+                <p>
+                    Explore available projects and find
+                    freelance opportunities.
+                </p>
+
+                <a href="browse-jobs.html" class="btn btn-primary">
+                Browse Jobs
+                </a>
+            </div>
+
+
+
+            <!-- My Proposals -->
+
+            <div class="dashboard-card freelancer-card">
+
+                <div class="dashboard-icon">
+                    📨
+                </div>
+
+                <h2>
+                    My Proposals
+                </h2>
+
+                <p>
+                    View and track the proposals you have
+                    submitted.
+                </p>
+
+                <a href="my-proposals.html" class="btn btn-primary">
+                    My Proposals
+                </a>
+            </div>
+
+
+
+            <!-- My Profile -->
+
+            <div class="dashboard-card freelancer-card">
+
+                <div class="dashboard-icon">
+                    👤
+                </div>
+
+                <h2>
+                    My Profile
+                </h2>
+
+                <p>
+                    Manage your freelancer profile and
+                    portfolio.
+                </p>
+
+                <button class="btn btn-primary" onclick="window.location.href='profile.html'">
+                    My Profile
+                </button>
+
+            </div>
+
+
+
+            <!-- My Projects -->
+
+            <div class="dashboard-card freelancer-card">
+
+                <div class="dashboard-icon">
+                    💼
+                </div>
+
+                <h2>
+                    My Projects
+                </h2>
+
+                <p>
+                    Track the projects you are currently
+                    working on.
+                </p>
+
+                <button class="btn btn-primary" onclick="window.location.href='my-projects.html'">
+                    My Projects
+                </button>
+            </div>
+
+
+
+            <!-- =================================
+                    CLIENT CARDS
+            ================================== -->
+
+
+            <!-- Post a Job -->
+
+            <div class="dashboard-card client-card">
+
+                <div class="dashboard-icon">
+                    ➕
+                </div>
+
+                <h2>
+                    Post a Job
+                </h2>
+
+                <p>
+                    Create a project and find skilled
+                    freelancers.
+                </p>
+                <a href="post-job.html" class="btn btn-primary">
+                    Post a Job
+                </a>
+
+            </div>
+
+
+
+            <!-- My Posted Jobs -->
+
+            <div class="dashboard-card client-card">
+
+                <div class="dashboard-icon">
+                    📁
+                </div>
+
+                <h2>
+                    My Posted Jobs
+                </h2>
+
+                <p>
+                    View and manage the jobs you have
+                    posted.
+                </p>
+
+                <a href="my-posted-jobs.html" class="btn btn-primary">
+                    My Posted Jobs
+                </a>
+
+            </div>
+
+
+
+            <!-- Client Profile -->
+
+            <div class="dashboard-card client-card">
+
+                <div class="dashboard-icon">
+                    👤
+                </div>
+
+                <h2>
+                    My Profile
+                </h2>
+
+                <p>
+                    Manage your client profile and account
+                    information.
+                </p>
+
+                <button class="btn btn-primary" onclick="window.location.href='profile.html'">
+                    My Profile
+                </button>
+
+            </div>
+
+
+
+            <!-- Received Proposals -->
+
+            <div class="dashboard-card client-card">
+
+                <div class="dashboard-icon">
+                    📨
+                </div>
+
+                <h2>
+                    Received Proposals
+                </h2>
+
+                <p>
+                    Review proposals submitted by
+                    freelancers.
+                </p>
+
+                <a href="received-proposals.html" class="btn btn-primary">
+                    Received Proposals
+                </a>
+
+            </div>
+
+
+            <div class="dashboard-card client-card">
+
+                <h2>
+                    My Projects
+                </h2>
+
+                <p>
+                    Track projects you have hired freelancers for.
+                </p>
+
+                <button
+                        class="btn btn-primary"
+                        onclick="window.location.href='my-client-projects.html'">
+                        My Projects
+                </button>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =================================
+            JAVASCRIPT
+    ================================== -->
+
+    <script src="../js/user.js"></script>
+
+
+</body>
+
+</html>

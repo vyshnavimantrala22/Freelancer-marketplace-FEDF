@@ -1,0 +1,142 @@
+/* =================================
+    FREELANCEHUB ADMIN MODULE
+================================= */
+
+
+/* =================================
+    ADMIN LOGIN
+================================= */
+
+.auth-page {
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 40px 20px;
+
+    box-sizing: border-box;
+}
+
+.auth-card {
+    width: 100%;
+
+    max-width: 450px;
+
+    margin: 0 auto;
+}
+
+
+/* =================================
+    ADMIN DASHBOARD
+================================= */
+
+.dashboard-page {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 60px 30px;
+}
+
+.dashboard-header {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.dashboard-header h1 {
+    margin-bottom: 10px;
+}
+
+.dashboard-header p {
+    line-height: 1.6;
+}
+
+
+/* =================================
+    ADMIN STATISTICS
+================================= */
+
+.dashboard-number {
+    font-size: 42px;
+
+    font-weight: 700;
+
+    margin: 15px 0 0;
+}
+
+
+/* =================================
+    ADMIN SECTIONS
+================================= */
+
+.dashboard-section {
+    margin-top: 50px;
+}
+
+.dashboard-section > h2 {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+
+/* =================================
+    DASHBOARD GRID
+================================= */
+
+.dashboard-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 25px;
+}
+
+
+/* =================================
+    DASHBOARD CARDS
+================================= */
+
+.dashboard-card {
+    padding: 30px;
+
+    border-radius: 16px;
+
+    text-align: center;
+}
+
+
+/* =================================
+    RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 800px) {
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-page {
+        padding: 40px 20px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .auth-page {
+        padding: 25px 15px;
+    }
+
+    .dashboard-page {
+        padding: 30px 15px;
+    }
+
+}

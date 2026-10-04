@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Browse Jobs | FreelanceHub</title>
+
+    <!-- Main Website CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Jobs CSS -->
+    <link rel="stylesheet" href="../css/jobs.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================
+            NAVIGATION BAR
+    ================================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            FreelanceHub
+        </div>
+
+        <div class="dashboard-nav">
+
+            <a href="user-dashboard.html" class="btn btn-outline">
+                ← Dashboard
+            </a>
+
+            <button id="logoutButton" class="btn btn-outline">
+                Logout
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =================================
+            BROWSE JOBS
+    ================================== -->
+
+    <main class="jobs-container">
+
+
+        <!-- Page Header -->
+
+        <section class="jobs-header">
+
+            <p class="hero-tag">
+                FREELANCE OPPORTUNITIES
+            </p>
+
+            <h1>
+                Browse Jobs
+            </h1>
+
+            <p>
+                Find projects that match your skills and
+                start working with clients.
+            </p>
+
+        </section>
+
+
+
+        <!-- Search -->
+
+        <section class="job-search">
+
+            <input
+                type="text"
+                id="jobSearch"
+                placeholder="Search jobs by title or skill..."
+            >
+
+        </section>
+
+
+
+        <!-- Jobs -->
+
+        <section id="jobsContainer" class="jobs-grid">
+
+            <!-- Jobs will be added using JavaScript -->
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="../js/jobs.js"></script>
+
+</body>
+
+</html>
