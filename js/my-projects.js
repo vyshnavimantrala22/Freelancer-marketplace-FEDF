@@ -89,7 +89,7 @@ function displayProjects() {
 
 
     /* =================================
-       DISPLAY PROJECTS
+        DISPLAY PROJECTS
     ================================= */
 
     myProjects.forEach(
@@ -387,7 +387,7 @@ function displayProjects() {
 
 
 /* =================================
-   UPDATE PROJECT
+    UPDATE PROJECT
 ================================= */
 
 function updateProject(projectId) {

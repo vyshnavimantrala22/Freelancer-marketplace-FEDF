@@ -1,5 +1,5 @@
 /* =================================
-   FREELANCEHUB RECEIVED PROPOSALS
+    FREELANCEHUB RECEIVED PROPOSALS
 ================================= */
 
 const loggedInUser =
@@ -28,7 +28,7 @@ const proposalsContainer =
 
 
 /* =================================
-   DISPLAY PROPOSALS
+    DISPLAY PROPOSALS
 ================================= */
 
 function displayProposals() {
@@ -50,7 +50,7 @@ function displayProposals() {
 
 
     /* =================================
-       NO PROPOSALS
+        NO PROPOSALS
     ================================= */
 
     if (myProposals.length === 0) {
@@ -84,7 +84,7 @@ function displayProposals() {
 
 
     /* =================================
-       DISPLAY EACH PROPOSAL
+        DISPLAY EACH PROPOSAL
     ================================= */
 
     myProposals.forEach(
@@ -99,7 +99,7 @@ function displayProposals() {
 
 
             /* =================================
-               ACCEPTED PROPOSAL
+                ACCEPTED PROPOSAL
             ================================= */
 
             if (
@@ -176,7 +176,7 @@ function displayProposals() {
 
 
             /* =================================
-               PENDING PROPOSAL
+                PENDING PROPOSAL
             ================================= */
 
             else {
@@ -287,7 +287,7 @@ function displayProposals() {
 
 
 /* =================================
-   ACCEPT PROPOSAL
+    ACCEPT PROPOSAL
 ================================= */
 
 function acceptProposal(
@@ -372,7 +372,7 @@ function acceptProposal(
 
 
     /* =================================
-       CREATE PROJECT
+        CREATE PROJECT
     ================================= */
 
     let projects =
@@ -467,7 +467,7 @@ function acceptProposal(
 
 
 /* =================================
-   LOGOUT
+    LOGOUT
 ================================= */
 
 const logoutButton =
@@ -496,7 +496,7 @@ if (logoutButton) {
 
 
 /* =================================
-   INITIAL DISPLAY
+    INITIAL DISPLAY
 ================================= */
 
 displayProposals();
